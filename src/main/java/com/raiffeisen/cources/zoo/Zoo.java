@@ -27,6 +27,8 @@ public class Zoo {
         Cage second = new Volier(animalSecond,10);
         cages[1] = second;
 
+
+        //TODO: переопределить toString у конкретных животных
     }
 
     public void buyTicket() {
