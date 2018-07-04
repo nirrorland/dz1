@@ -14,6 +14,7 @@ public abstract class Cage implements ICageDescriptor {
         StringBuilder descriptionBuilder = new StringBuilder();
 
         for (Animal animal: animals) {
+            System.out.println(animal.toString());
             descriptionBuilder.append(animal.toString());
         }
 

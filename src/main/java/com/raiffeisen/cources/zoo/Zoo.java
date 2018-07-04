@@ -5,17 +5,18 @@ import com.raiffeisen.cources.zoo.animals.Birds;
 import com.raiffeisen.cources.zoo.animals.africa.Monkey;
 import com.raiffeisen.cources.zoo.animals.europe.Eagle;
 import com.raiffeisen.cources.zoo.cages.Cage;
+import com.raiffeisen.cources.zoo.cages.Padok;
 import com.raiffeisen.cources.zoo.cages.Volier;
 
 public class Zoo {
     private Cage[] cages;
 
     public Zoo() {
-        cages = new Cage[3];
+        cages = new Cage[2];
 
         Animal[] animalFirst = new Animal[2];
         animalFirst[0] = new Monkey("Aby", "Brown", true, 4);
-        animalFirst[0] = new Monkey("Tracey", "Grey", true, 3);
+        animalFirst[1] = new Monkey("Tracey", "Grey", true, 3);
         Cage first = new Volier(animalFirst,10);
         cages[0] = first;
 
